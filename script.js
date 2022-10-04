@@ -29,21 +29,21 @@ function generatePassword() {
       alert ("Input is invalid, please input a valid character length");
     } 
   }
-}
 
-alert ("You chose the length of your password to be \n" + passwordLength + " characters long \n Next, confirm whether you would like your password to contain numbers, lower case, upper case, or special characters. \n You must select at least one option");
+
+alert ("You chose the length of your password to be:\n" + passwordLength + " characters long \nNext, confirm whether you would like your password to contain numbers, lower case, upper case, or special characters. \nYou must select at least one option.");
 
 while (!invalid) {
-  var lowerCase = confirm("Would you like lower case characters in your password?");
-  var upperCase = confirm("Would you like upper case characters in your password?");
-  var numerical = confirm("Would you like your password to contain numbers?");
-  var special = confirm("Would you like your password to contain special characters?");
+  var lowerCase = confirm("Would you like your password to contain \nlower case letters?");
+  var upperCase = confirm("Would you like your password to contain \nupper case letters?");
+  var numerical = confirm("Would you like your password to contain \nnumbers?");
+  var special = confirm("Would you like your password to contain \nspecial characters?");
 
-  alert("You chose \n lower case letters: " + lowerCase + " \n upper case letters: " + upperCase + " \n numbers:" + numerical + "special characters: " + special);
+  alert("You chose\n lower case letters: " + lowerCase + "\n upper case letters: " + upperCase + "\n numbers:" + numerical + "\n special characters: " + special);
   if (lowerCase == true || upperCase == true || numerical == true || special == true) {
     invalid = true;
   } else {
-    alert ("Invalid entry. \n At least one character type must be selected.");
+    alert ("Invalid entry. \nAt least one character type must be selected.");
   }
 }
 
@@ -75,4 +75,5 @@ for (var i = 0; i < passwordLength; i++) {
   randomNumber += grandString[Math.floor(Math.random() * grandString.length)];
 } 
 return randomNumber;
+  }
 }
