@@ -32,6 +32,11 @@ THEN a password is generated that matches the selected criteria
 WHEN the password is generated
 THEN the password is either displayed in an alert or written to the page
 
+## Link
+Link to deployed project: https://benjamincottrell.github.io/random-password-generator/
+
+![Password generator screenshot](./assets/images/password-generator-screenshot.JPG)
+
 ## Credits
 
 Credit to this quick youtube tutorial by OpenJavaScript which helped me to get off the ground. https://www.youtube.com/watch?v=ssYo9t37pE4
