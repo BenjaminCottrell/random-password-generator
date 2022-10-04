@@ -15,12 +15,12 @@ generateBtn.addEventListener("click", writePassword);
 // New code starts below
 
 function generatePassword() {
-  alert ("Respond to the ensuing questions to generate a random password");
+  alert ("Respond to the ensuing questions to generate a random password.");
 
   // Call for user input to determine password length and confirm afterward
   var invalid = true;
   while (invalid) {
-    var passwordLength = Number(prompt("Enter the number of characters you would like your password to contain \n It must be higher than 8 characters \n It must also be less than 128 characters."));
+    var passwordLength = Number(prompt("Enter the number of characters you would like your password to contain \nIt must be higher than 8 characters \nIt must also be less than 128 characters."));
     if (passwordLength > 7 && passwordLength < 129) {
       invalid = false;
     } else if (passwordLength == 0) {
@@ -74,6 +74,7 @@ var randomNumber = '';
 for (var i = 0; i < passwordLength; i++) {
   randomNumber += grandString[Math.floor(Math.random() * grandString.length)];
 } 
-return randomNumber;
   }
+return randomNumber;
+  
 }
